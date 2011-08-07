@@ -1,13 +1,15 @@
+encoding: utf-8
+
 class Pic < ActiveRecord::Base
   # attr_accessible :title, :image_url
   
-  validates_presence_of :title, :message => "请填写名称."
-  validates_presence_of :image_url, :message => "请选择图片."
-  validates_length_of   :description, :maximum => 125, :message=>"您的描述过多，请简要介绍"
+  validates_presence_of :title, :message => "can't be blank."
+  validates_presence_of :image_url, :message => "can't be blank."
+  validates_length_of   :description, :maximum => 125, :message=>"description exceed the limit."
 
   validates_format_of :image_url,
         :with=>/^.*(.jpg|.JPG|.gif|.GIF|.png|.PNG)$/,
-        :message => "图片支持 GIF|JPG|PNG 格式."
+        :message => "GIF|JPG|PNG are supported."
   
   file_column :image_url, 
               :root_path =>  "public",
