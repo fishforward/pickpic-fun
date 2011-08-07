@@ -1,4 +1,3 @@
-encoding: utf-8
 
 class Pic < ActiveRecord::Base
   # attr_accessible :title, :image_url
