@@ -83,8 +83,8 @@ ol li { margin: 0 0 0 2em; padding: 0 0 0 1em;}
 #footer { padding-top: 40px; padding-bottom: 90px; position: relative; }
 
 /* header > logo */
-h1 { margin: 65px 0 19px; padding: 0; float: left; display: inline; width: 343px; height: 95px; background: url(../images/creato-design-logo.png) 0 0 no-repeat; }
-h1 a { width: 343px; height: 95px; background: url(../images/creato-design-logo.png) 0 0 no-repeat; text-indent: -9999px; float: left;}
+h1 { margin: 65px 0 19px; padding: 0; float: left; display: inline; width: 343px; height: 95px; background: url(../images/pickpic-fun-logo.png) 0 0 no-repeat; }
+h1 a { width: 343px; height: 95px; background: url(../images/pickpic-fun-logo.png) 0 0 no-repeat; text-indent: -9999px; float: left;}
 
 /* header > nav */
 #nav { padding: 16px 0 3px; font-size: 1.3em; position: relative; float: right;}
