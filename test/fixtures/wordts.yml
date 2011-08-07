@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id萵: MyString
+  name: MyString
+  address: MyString
+  tel: MyString
+
+two:
+  id萵: MyString
+  name: MyString
+  address: MyString
+  tel: MyString

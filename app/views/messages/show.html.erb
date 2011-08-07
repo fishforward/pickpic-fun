@@ -1,0 +1,23 @@
+<p>
+  <b>User:</b>
+  <%=h @message.user %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%=h @message.ip %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @message.title %>
+</p>
+
+<p>
+  <b>Context:</b>
+  <%=h @message.context %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

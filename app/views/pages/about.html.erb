@@ -1,0 +1,52 @@
+<div class="section">
+	<ul class="news">
+		<li>
+			<h2><a href="#">About & Contack me</a></h2>
+			
+			<p>
+				It's Just a Pick<br>
+				If Bother You，Anywhere, Ignore Me<br>
+				If You Have Any Question,Contact Me <a href="mailto:fishgyuyi@gmail.com">E-mail Me</a>
+			</p>
+			
+			<% if !@had_msg  %>
+			<div class="comment">
+				<% form_for(@message) do |f| %>
+		 			<%= f.error_messages %>
+					<fieldset>
+						<ul>
+							<li class="half">
+								<%= f.label :email, 'Your Email' %>
+								<%= f.text_field :title %>
+							</li>
+							<li>
+								<%= f.label :something, '随便说点什么' %>
+							    <input type="button" value="#更有趣的策略选出两个pk图片,现在是随机的#" onclick="setContext(this.value)"/>
+							    <input type="button" value="#bug？#" onclick="setContext(this.value)"/>
+								<%= f.text_area :context, :id=>"context"%>
+							</li>
+							<li>
+								<%= f.submit '留言' %>
+							</li>
+						</ul>
+					</fieldset>
+				
+				<% end %>
+			</div>
+			<% else %>
+				Thanks for your message!
+			<% end %>
+			
+		</li>
+	</ul>
+	
+</div>
+
+ <script language="JavaScript" type="text/JavaScript">
+
+	function setContext(v){
+	
+	 	document.getElementById('context').value = document.getElementById('context').value + v;
+	}
+
+ </script>
