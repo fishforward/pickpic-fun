@@ -5,7 +5,7 @@ RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
 # ruby 1.9 needs it
 #Encoding.default_internal, Encoding.default_external = ['utf-8'] * 2
-#Encoding.default_external = Encoding::UTF_8
+Encoding.default_external = Encoding::UTF_8
 #Encoding.default_internal = Encoding::UTF_8
 
 # Bootstrap the Rails environment, frameworks, and default configuration
