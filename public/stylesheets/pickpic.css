@@ -186,6 +186,7 @@ p.more { text-align: right; }
 .tabs .content,
 /*.featured.news,*/
 .ads li > a,
+.ads div >li,
 .ad a,
 .comments dt span,
 .comments li > div,
@@ -206,8 +207,22 @@ div > .comment form,
 .ads a img { display: block; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border: none;}
 .ads.small li > a { width: 125px; }
 .ads.big li > a { width: 306px; }
+.mid {width:30px;}
 .ads li > a:hover,
 .ads li > a:focus { background: #bf1e2e; }
+
+/* mid button*/
+.ingore_pick_mid {
+	clear: both;
+	width: 30px;
+	margin-top: 100px;
+	margin-bottom: -120px;
+	margin-left: 360px;
+	margin-right: 20px;
+	}
+.ingore_pick_mid .retweet { height: 16px; width: 50px; background: #c44448; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border: 1px solid #ae3236; text-align: center; margin-top: 3px; display: block; cursor: pointer; padding: 0px 0px 0px; font-size: 14px; color: #FFF; text-decoration: none; line-height: 16px; }
+.ingore_pick_mid .retweet:hover, .tweetmeme_button .retweet.selected { background: #fff; color: #c44448; }
+.ingore_pick_mid .retweet.selected { cursor: text; }
 
 /* aside > tabs */
 .tabs .nav { float: left; width: 100%;}

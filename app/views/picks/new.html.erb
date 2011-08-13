@@ -7,7 +7,12 @@
 				<div class="tweetmemebutton">
 					<a class="count" href="#" title="Failure: Invalid Story URL specified"><span class="c">Percent</span><br/><span class="t"> <%= @pickPercentage %>  /  <%= @picSum %></span></a>
 					<!--<a class="retweet" title="" href="#">retweet</a>-->
-			  </div>
+			 	</div>
+			</div>
+			
+			<div class="ingore_pick_mid">
+<!--  				<%= link_to "Next", :controller => "picks", :action => "new" %>  -->
+				<a class="retweet" title="" href="/picks/new">Next</a>
 			</div>
 			
 			<p>&nbsp;</p>
@@ -39,11 +44,8 @@
 							<p><a href="#">See history pick</a></p>
 						</div>
 					</li>
-					<!-- <li>
-						<div class="popular">
-		                  <%= link_to "Next Pick", :controller => "picks", :action => "new" %>
-		             	</div>
-	             	</li> -->
+<!-- 					<li class="ingore_pick_mid"> -->
+<!-- 		            </li> -->
 					<li>
 <!-- 						<a href="#"><img src="images/ads/ad-270-2.jpg" alt="ad img desc" /></a> -->
 						<a><%= image_tag( url_for_file_column("r_pic", "image_url", "medium" ), :id => "rpic", :class=>"image_wrapper fl_image" ) %></a>
