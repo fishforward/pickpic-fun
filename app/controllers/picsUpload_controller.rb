@@ -1,3 +1,6 @@
+require 'upyun'
+require 'rest_client'
+
 class PicsuploadController < ApplicationController
   def upload
     @picc = Pic.new()
@@ -14,6 +17,13 @@ class PicsuploadController < ApplicationController
     
     respond_to do |format|
       if @picc.save
+        
+        UpYun.new().upload(@picc.image_url,@picc.id)
+        
+        #localFile= File.new(@picc.image_url)
+        File.delete(@picc.image_url)
+        Dir.delete(File.dirname(@picc.image_url))
+        
         format.html { redirect_to(@picc) }
         format.xml  { render :xml => @picc, :status => :created, :location => @picc }
       else

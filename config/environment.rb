@@ -5,8 +5,15 @@ RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
 # ruby 1.9 needs it
 #Encoding.default_internal, Encoding.default_external = ['utf-8'] * 2
-Encoding.default_external = Encoding::UTF_8
+
+#～～～～～#本地启动，这一行要注释掉
+#Encoding.default_external = Encoding::UTF_8
 #Encoding.default_internal = Encoding::UTF_8
+
+# 图片地址前缀
+FILE_PATH_PRE ="http://forward.b0.upaiyun.com/"
+MIDDLE_PIC = "!middle"
+BIG_PIC = "!big"
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')

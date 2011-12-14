@@ -12,10 +12,10 @@ class Pic < ActiveRecord::Base
   
   file_column :image_url, 
               :root_path =>  "public",
-              :web_root => "",
-              :magick => {       
-              :versions => { "medium" => "306x306>",  "thumb" => "780x780>"  }      
-              }  
+              :web_root => ""
+          #    :magick => {       
+          #    :versions => { "medium" => "306x306>",  "thumb" => "780x780>"  }      
+          #    }  
   ##attr_accessible :id, :title, :description, :image_url
   
   def self.search( page)  

@@ -1,6 +1,6 @@
 Thumb<br />
-<%= image_tag( url_for_file_column("picc", "image_url", "thumb" ) ) %><hr />
+<%= image_tag( FILE_PATH_PRE + @picc.id.to_s + MIDDLE_PIC ) %><hr />
 Medium<br />
-<%= image_tag( url_for_file_column("picc", "image_url", "medium" ) ) %><hr />
+<%= image_tag( FILE_PATH_PRE + @picc.id.to_s + BIG_PIC) %><hr />
 Original<br />
-<%= image_tag( url_for_file_column("picc", "image_url" ) ) %>
+<%= image_tag( FILE_PATH_PRE + @l_pic.id.to_s ) %>

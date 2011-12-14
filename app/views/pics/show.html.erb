@@ -7,8 +7,8 @@
 			
 			<div class="section">
 				<ul class="ads large">
-					<li>
-					    <a><%= link_to image_tag( url_for_file_column("pic", "image_url", "thumb" )), :controller => "pics", :action => "show", :id => @pic.id %></a>
+					<li><!-- url_for_file_column("pic", "image_url", "thumb" ) -->
+					    <a><%= link_to image_tag(FILE_PATH_PRE + @pic.id.to_s + BIG_PIC), :controller => "pics", :action => "show", :id => @pic.id %></a>
 
 						<br>
 					    <div class="popular">
