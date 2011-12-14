@@ -7,7 +7,7 @@ RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 #Encoding.default_internal, Encoding.default_external = ['utf-8'] * 2
 
 #～～～～～#本地启动，这一行要注释掉
-#Encoding.default_external = Encoding::UTF_8
+Encoding.default_external = Encoding::UTF_8
 #Encoding.default_internal = Encoding::UTF_8
 
 # 图片地址前缀
