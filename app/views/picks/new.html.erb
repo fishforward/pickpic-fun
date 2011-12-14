@@ -22,7 +22,7 @@
 <!-- 						<a href="#"><img src="images/ads/ad-270-1.jpg" alt="ad img desc" /></a> -->
 						
 						<!-- "l_pic", "image_url", "medium" -->
-					    <a><%= image_tag(FILE_PATH_PRE + @l_pic.id.to_s + MIDDLE_PIC, :id => "lpic", :class=>"image_wrapper fl_image") %></a>
+					    <a><%= image_tag(FILE_PATH_PRE + @l_pic.keyname + MIDDLE_PIC, :id => "lpic", :class=>"image_wrapper fl_image") %></a>
 						<br>
 					    <div class="popular">
 					 		<ul>
@@ -49,7 +49,7 @@
 <!-- 		            </li> -->
 					<li>
 <!-- 						<a href="#"><img src="images/ads/ad-270-2.jpg" alt="ad img desc" /></a> -->
-						<a><%= image_tag(FILE_PATH_PRE + @r_pic.id.to_s + MIDDLE_PIC, :id => "rpic", :class=>"image_wrapper fl_image" ) %></a>
+						<a><%= image_tag(FILE_PATH_PRE + @r_pic.keyname + MIDDLE_PIC, :id => "rpic", :class=>"image_wrapper fl_image" ) %></a>
 					    <br>
 						<div class="popular">
 							<ul>

@@ -14,11 +14,16 @@ class PicsuploadController < ApplicationController
     @picc.scores = 100;
     @picc.wins = 0;
     @picc.losses = 0;
+    @picc.keyname = Time.now.to_i.to_s + "_"
     
     respond_to do |format|
       if @picc.save
         
-        UpYun.new().upload(@picc.image_url,@picc.id)
+        extname =File.extname(@picc.image_url)
+        @picc.keyname=@picc.keyname + @picc.id.to_s + extname
+        @picc.save
+        
+        UpYun.new().upload(@picc.image_url,@picc.keyname)
         
         #localFile= File.new(@picc.image_url)
         File.delete(@picc.image_url)
