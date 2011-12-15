@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 201112141307111) do
+ActiveRecord::Schema.define(:version => 20110727121628) do
 
   create_table "messages", :force => true do |t|
     t.string   "user"
@@ -18,12 +18,6 @@ ActiveRecord::Schema.define(:version => 201112141307111) do
     t.string   "context"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "photos", :force => true do |t|
-    t.string   "image"
-    t.datetime "update_time"
-    t.datetime "created_on"
   end
 
   create_table "picks", :force => true do |t|
@@ -35,10 +29,14 @@ ActiveRecord::Schema.define(:version => 201112141307111) do
     t.datetime "updated_at"
   end
 
-# Could not dump table "pics" because of following StandardError
-#   Unknown type 'real' for column 'scores'
-
-  create_table "users", :force => true do |t|
+  create_table "pics", :force => true do |t|
+    t.string   "keyname"
+    t.string   "title"
+    t.string   "description"
+    t.string   "image_url"
+    t.integer  "scores"
+    t.integer  "wins"
+    t.integer  "losses"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
